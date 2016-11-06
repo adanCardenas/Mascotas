@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Mascotas</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acerca">Acerca</string>
+    <string name="action_bar_mascotas_titulo">Mascotas</string>
+    <string name="activity_contacto_textview_titulo">Contacto</string>
+    <string name="activity_contacto_hint_nombre">Nombre</string>
+    <string name="activity_contacto_hint_correo">Correo Electronico</string>
+    <string name="activity_contacto_hint_comentario">Comentario</string>
+    <string name="activity_contacto_boton_enviar">Enviar comentario</string>
+    <string name="circle_imageview_shadow_radius">10</string>
 </resources>

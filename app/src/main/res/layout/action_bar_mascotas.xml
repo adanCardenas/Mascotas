@@ -2,6 +2,7 @@
 <android.support.v7.widget.Toolbar
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/action_bar_mascotas"
     android:layout_height="?attr/actionBarSize"
     android:layout_width="match_parent"
     android:background="@color/colorPrimary"
@@ -11,25 +12,30 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/action_bar_mascotas_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margen_estandar"
+            android:src="@drawable/logo"/>
         <TextView
-            android:id="@+id/custom_actionbar_title"
+            android:id="@+id/action_bar_mascotas_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mascotas"
-            android:textSize="18sp"
+            android:text="@string/action_bar_mascotas_titulo"
+            android:textSize="@dimen/action_bar_text_title"
             android:textStyle="normal|bold"
-            android:layout_marginLeft="20dp"/>
-
+            android:layout_toRightOf="@id/action_bar_mascotas_logo"
+            android:layout_marginLeft="@dimen/margen_estandar"/>
         <ImageButton
+            android:id="@+id/action_bar_mascotas_image_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="@dimen/margen_estandar"
             android:src="@drawable/favs"
             android:background="@drawable/favs"
-            android:onClick="mascotasFavoritas"
-            />
-
+            android:onClick="mascotasFavoritas"/>
     </RelativeLayout>
-
 </android.support.v7.widget.Toolbar>

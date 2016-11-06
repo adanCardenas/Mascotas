@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_contacto"
+        android:title="@string/menu_contacto"
+        android:orderInCategory="001"
+        ></item>
+    <item
+        android:id="@+id/menu_acerca"
+        android:title="@string/menu_acerca"
+        android:orderInCategory="002"
+        ></item>
+
+</menu>
