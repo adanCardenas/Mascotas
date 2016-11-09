@@ -35,7 +35,7 @@ public class MailService {
         String host = "smtp.gmail.com";
         String address = "adan0adn@gmail.com";
         String from = "fromaddress@gmail.com";
-        String pass = "Aries070486";
+        String pass = "";//Para probar pon tu password
         String to="adan0adn@gmail.com";
 
         Multipart multiPart;
