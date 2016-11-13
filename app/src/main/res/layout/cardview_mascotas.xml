@@ -49,6 +49,7 @@
                     android:layout_height="wrap_content"
                     android:text="5"/>
                 <ImageView
+                    android:id="@+id/CV_ImageView_Rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/rate"

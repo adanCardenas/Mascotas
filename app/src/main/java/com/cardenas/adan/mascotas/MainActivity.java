@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,13 +15,12 @@ import android.widget.ImageButton;
 import com.cardenas.adan.mascotas.activities.ActivityAcerca;
 import com.cardenas.adan.mascotas.activities.ActivityContacto;
 import com.cardenas.adan.mascotas.adapter.MascotaPageAdapter;
-import com.cardenas.adan.mascotas.dao.MascotasDAO;
-import com.cardenas.adan.mascotas.fragment.MascotaPerfilFragmentRecyclerView;
-import com.cardenas.adan.mascotas.fragment.MascotaFragmentRecyclerview;
-import com.cardenas.adan.mascotas.model.Mascota;
+import com.cardenas.adan.mascotas.dao.impl.MascotasDAO;
+import com.cardenas.adan.mascotas.dao.impl.MascotasManagerDAO;
+import com.cardenas.adan.mascotas.view.fragment.impl.MascotaPerfilFragmentRecyclerView;
+import com.cardenas.adan.mascotas.view.fragment.impl.MascotaFragmentRecyclerview;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
@@ -32,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        new MascotasManagerDAO(getApplicationContext()).inicializaMascotas();
+
 
         Toolbar customToolbar = (Toolbar) findViewById(R.id.main_custom_actionbar);
         ImageButton customBarImageView = (ImageButton) findViewById(R.id.action_bar_mascotas_image_button);

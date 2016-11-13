@@ -8,14 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.cardenas.adan.mascotas.R;
 import com.cardenas.adan.mascotas.adapter.MascotaAdapter;
-import com.cardenas.adan.mascotas.dao.MascotasDAO;
 import com.cardenas.adan.mascotas.model.Mascota;
 
 import java.util.List;
 
 
 public class MascotasFavoritas extends AppCompatActivity {
-    MascotasDAO dao=new MascotasDAO();
     private RecyclerView listaMascotas;
     List<Mascota> mascotasFav;
 
@@ -33,7 +31,7 @@ public class MascotasFavoritas extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         listaMascotas.setLayoutManager(linearLayoutManager);
-        mascotasFav= dao.mascotasFavoritas();
+        //mascotasFav= dao.mascotasFavoritas();
         initAdaptador();
 
 

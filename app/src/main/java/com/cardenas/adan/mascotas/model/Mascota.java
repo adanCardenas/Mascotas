@@ -5,28 +5,31 @@ package com.cardenas.adan.mascotas.model;
  */
 
 public class Mascota {
-    private String id;
+    private int id;
     private String name;
     private int image;
-    private String rating;
+    private int rating;
 
-    public Mascota(String id, String name, int image, String rating) {
+    public Mascota() {
+    }
+
+    public Mascota(int id, String name, int image, int rating) {
         this.id = id;
         this.name = name;
         this.image = image;
         this.rating = rating;
     }
 
-    public Mascota(String id, String name) {
+    public Mascota(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -46,11 +49,11 @@ public class Mascota {
         this.image = image;
     }
 
-    public String getRating() {
+    public int getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(int rating) {
         this.rating = rating;
     }
 }

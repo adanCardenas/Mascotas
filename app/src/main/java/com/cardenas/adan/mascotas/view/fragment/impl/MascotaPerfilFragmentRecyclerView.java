@@ -1,4 +1,4 @@
-package com.cardenas.adan.mascotas.fragment;
+package com.cardenas.adan.mascotas.view.fragment.impl;
 
 
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.cardenas.adan.mascotas.R;
 import com.cardenas.adan.mascotas.adapter.MascotaAdapter;
-import com.cardenas.adan.mascotas.dao.MascotasDAO;
+import com.cardenas.adan.mascotas.dao.impl.MascotasManagerDAO;
 import com.cardenas.adan.mascotas.model.Mascota;
 
 import java.util.List;
@@ -20,7 +20,7 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  */
 public class MascotaPerfilFragmentRecyclerView extends Fragment {
-    MascotasDAO mascotaDAO =new MascotasDAO();
+    MascotasManagerDAO mascotaDAO =new MascotasManagerDAO(getContext());
     List<Mascota> mascotas;
     private RecyclerView listaMascotasPerfil;
 
