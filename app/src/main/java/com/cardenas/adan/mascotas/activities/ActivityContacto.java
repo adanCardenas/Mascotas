@@ -35,8 +35,6 @@ public class ActivityContacto extends AppCompatActivity {
         setSupportActionBar(customToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-
         nombre      = (TextView) findViewById(R.id.activity_contacto_textinputedit_nombre);
         correo      = (TextView) findViewById(R.id.activity_contacto_textinputedit_correo_electronico);
         comentario  = (TextView) findViewById(R.id.activity_contacto_textinputedit_comentario);

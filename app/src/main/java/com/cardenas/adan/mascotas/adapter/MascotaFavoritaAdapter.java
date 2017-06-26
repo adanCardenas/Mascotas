@@ -21,16 +21,14 @@ public class MascotaFavoritaAdapter extends RecyclerView.Adapter<MascotaFavorita
 
     @Override
     public MascotaFavoritaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_mascotas,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_mascotas_instagram,parent,false);
         return new MascotaFavoritaAdapter.MascotaFavoritaViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(MascotaFavoritaViewHolder mascotaFavoritaViewHolder, int position) {
         Mascota mascota = mascotas.get(position);
-        mascotaFavoritaViewHolder.nombreMascota.setText(mascota.getName());
         mascotaFavoritaViewHolder.fotoMascota.setImageResource(mascota.getImage());
-        mascotaFavoritaViewHolder.ratingMascota.setText(mascota.getRating());
     }
 
     @Override

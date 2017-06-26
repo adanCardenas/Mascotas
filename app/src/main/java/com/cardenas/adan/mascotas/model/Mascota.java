@@ -10,6 +10,7 @@ public class Mascota {
     private int image;
     private int rating;
 
+
     public Mascota() {
     }
 
@@ -56,4 +57,6 @@ public class Mascota {
     public void setRating(int rating) {
         this.rating = rating;
     }
+
+
 }

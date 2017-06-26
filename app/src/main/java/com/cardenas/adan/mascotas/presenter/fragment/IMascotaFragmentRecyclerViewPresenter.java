@@ -9,4 +9,6 @@ public interface IMascotaFragmentRecyclerViewPresenter {
     public void obtenerMascotas();
 
     public void mostrarMascotasReciclerView();
+
+    public void obtenerMascotasInstagram();
 }

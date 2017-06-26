@@ -85,10 +85,6 @@ public class MascotaAdapter extends RecyclerView.Adapter<MascotaAdapter.MascotaV
             ratingMascota       = (TextView)  itemView.findViewById(R.id.CV_TextView_Rating);
             ratingIconoMascota  = (ImageView) itemView.findViewById(R.id.CV_ImageView_Rating);
         }
-
-
     }
-
-
 }
 
